@@ -34,7 +34,7 @@ root.render(
   <React.StrictMode>
     <RowndProvider 
     postLoginRedirect="/"
-    appKey="fff0f826-1aba-4b70-81ea-60a6ed12e3e0">
+    appKey="app key">
         <RouterProvider router={router}/>
     </RowndProvider>  
   </React.StrictMode>
