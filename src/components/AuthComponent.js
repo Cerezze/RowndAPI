@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 function SignInOrLogIn() {
 
-  const { is_authenticated, requestSignIn } = useRownd(); 
+  const { user, is_authenticated, requestSignIn } = useRownd(); 
 
   useEffect(() => {
     if (!is_authenticated) {

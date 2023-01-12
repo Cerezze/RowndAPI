@@ -8,6 +8,7 @@ import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import AuthComponent from './components/AuthComponent';
 import Component1 from './components/Component1';
 import Component2 from './components/Component2';
+import UserTest from './components/userTest';
 
 const router = createBrowserRouter([
   {
@@ -22,6 +23,9 @@ const router = createBrowserRouter([
   },{
     path: "/authComponent",
     element: <AuthComponent/>    
+  },{
+    path: '/usertest',
+    element: <UserTest/>
   }
 ]);
 
@@ -30,7 +34,7 @@ root.render(
   <React.StrictMode>
     <RowndProvider 
     postLoginRedirect="/"
-    appKey="add your rownd.io key here">
+    appKey="fff0f826-1aba-4b70-81ea-60a6ed12e3e0">
         <RouterProvider router={router}/>
     </RowndProvider>  
   </React.StrictMode>
