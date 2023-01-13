@@ -33,7 +33,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <RowndProvider 
-    appKey="fff0f826-1aba-4b70-81ea-60a6ed12e3e0">
+    appKey="your app key">
         <RouterProvider router={router}/>
     </RowndProvider>  
   </React.StrictMode>
