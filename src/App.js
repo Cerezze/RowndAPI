@@ -1,13 +1,15 @@
 import { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useRoutes } from 'react-router-dom';
 import { useRownd } from '@rownd/react';
 
 function App() {
-  const { is_authenticated, signOut } = useRownd(); 
+  const { is_authenticated, signOut, user } = useRownd(); 
 
   const SignOutHandler = () => {
     signOut();
   }
+
+  console.log(user.data);
 
   return (
     <div>

@@ -10,7 +10,7 @@ function UserTest() {
 
   //console.log("USER::", window.rownd.user);
 
-  const numberHandler = (e) =>{
+  /*const numberHandler = (e) =>{
     e.preventDefault();
     setPhoneNumber(e.target.value);
   }
@@ -24,19 +24,20 @@ function UserTest() {
     if(firstName != null){
       setclicked(true);
     }
-  }
+  }*/
 
   useEffect(()=>{
-    if (clicked == true) {
+    //if (clicked == true) {
       window.rownd.user.setValue('first_name', firstName);
-    }
+    //}
   }, []);
   
   return (
     <div>
       <Link to="/">Or Click here to go back to home page</Link>
-      <input onChange = {nameHandler} value={firstName}/>
-      <button onClick={clickHandler}>Click To finish with Email</button>
+      <p>Check the API STORE</p>
+      {/*<input onChange = {nameHandler} value={firstName}/>*/}
+      {/*<button onClick={clickHandler}>Click To finish with Email</button>*/}
     </div>
   );
 }
