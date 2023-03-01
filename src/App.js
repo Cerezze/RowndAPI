@@ -15,6 +15,7 @@ function App() {
     <div>
       <Link to="/component1">Component1</Link>
       {is_authenticated?<Link to="/component2">Component2</Link>:null}
+      {is_authenticated?<Link to="/component3">Component3</Link>:null}
       <Link to="/usertest">TEST</Link>
       {is_authenticated?<p onClick={SignOutHandler}>SignOut</p>: <Link to="/authcomponent">Login</Link>}
       <p>App</p>

@@ -8,6 +8,7 @@ import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import AuthComponent from './components/AuthComponent';
 import Component1 from './components/Component1';
 import Component2 from './components/Component2';
+import Component3 from './components/Component3';
 import ParamContext from './components/ParamContext';
 import UserTest from './components/userTest';
 import ProtectedRoute from './components/ProtectedRoute';
@@ -24,6 +25,13 @@ const router = createBrowserRouter([
     element: 
       <ProtectedRoute>
         <Component2/>
+      </ProtectedRoute>
+  },
+  {
+    path: "/component3",
+    element: 
+      <ProtectedRoute>
+        <Component3/>
       </ProtectedRoute>
   },{
     path: "/authComponent",

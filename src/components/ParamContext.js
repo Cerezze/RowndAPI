@@ -6,28 +6,14 @@ function ParamContext() {
   const {is_authenticated, user } = useRownd(); 
   console.log("USER::", user.data, is_authenticated);
 
-  if(user.data.mood !== obj){
-    let obj = {
-        cam: "jin",
-        arr: [
-            {
-                jam: "cin"
-            },
-            {
-                jam: "cin1"
-            },
-            {
-                jam: "cin2"
-            }
-        ]
-      };
-  }
+  //This component is to set inital values in Rownd
+  // Do not set anything here that is supposed to change 
+  // without user intervention
 
   useEffect(()=>{
     if(is_authenticated){
         window.rownd.user.setValue('first_name', 'PiLLLskjhfn');
         window.rownd.user.setValue('age', 34);
-        window.rownd.user.setValue('mood', obj);
     }
   }, [is_authenticated]);
   
